@@ -1,0 +1,46 @@
+
+header{
+    height: 12vh;
+}
+
+
+footer{
+    height: 20vh;
+
+}
+
+main{
+
+    height: 68vh;
+
+}
+
+.test{
+
+    padding: 15vw 0vh 0vh 40vw;
+
+    
+
+}
+
+.sign{
+
+margin-left: 2.5vw;
+
+    
+}
+
+header span{
+
+    margin-top: 4.5vh;
+    font-weight: 500;
+    font-size: 3vh;
+
+}
+
+header h1{
+
+    margin-top: 1.5vh;
+
+
+}
