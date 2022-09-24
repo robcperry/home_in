@@ -1,15 +1,33 @@
-body{
-    background-color: #ededed ;
-}
+/* page */
 header{
     height: 12vh;
 }
+header span{
+
+    margin-top: 4.5vh;
+    font-weight: 500;
+    font-size: 3vh;
+
+}
+
+header h1{
+
+    margin-top: 1.5vh;
+
+
+}
+body{
+    background-color: #ededed ;
+}
+
 
 
 .feet{
     height: 5vh;
     
 }
+
+
 
 main{
 
@@ -34,29 +52,18 @@ margin-left: 2.5vw;
     
 }
 
-header span{
 
-    margin-top: 4.5vh;
-    font-weight: 500;
-    font-size: 3vh;
-
-}
-
-header h1{
-
-    margin-top: 1.5vh;
-
-
-}
 
 .mainer{
     height:20vh ;
 
 }
 
-
+/* NAV*/
 nav{
-    background-color: #ededed ;
+    background-color: #cecece ;
+    color: #3A7654;
+    
 }
 
 nav img{
@@ -66,6 +73,8 @@ nav img{
     
 
 }
+
+/* INDEX*/
 .single{
 
     height: auto;
@@ -98,4 +107,15 @@ nav img{
 .feet{
     color: #3A7654;
     margin: 10vh 0 0 40vw;
+}
+
+.card-panel{
+    width:15vw;
+    background-color: #3A7654;
+    color: #ededed; 
+    font-size: small;
+    margin-left: 55vw;
+    
+
+
 }
