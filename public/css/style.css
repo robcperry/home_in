@@ -1,18 +1,20 @@
-
+body{
+    background-color: #ededed ;
+}
 header{
     height: 12vh;
 }
 
 
-footer{
-    height: 20vh;
-
+.feet{
+    height: 5vh;
+    
 }
 
 main{
 
     height: 68vh;
-    background-color: #ededed ;
+    
 
 
 }
@@ -59,7 +61,7 @@ nav{
 
 nav img{
 
-    height: 10vh;
+    height: 7vh;
     width: 35vw;
     
 
@@ -73,3 +75,27 @@ nav img{
     
 }
 
+.tag{
+
+    margin: 20vh 0 0 25vw;
+    font-weight: 700;
+
+}
+
+.land{
+    margin-left: 25vw;
+    font-size: medium;
+}
+.landbutt{
+    margin: 3vh 0 0 30vw;
+    
+}
+
+.btn{
+    background-color: #3A7654;
+}
+
+.feet{
+    color: #3A7654;
+    margin: 10vh 0 0 40vw;
+}

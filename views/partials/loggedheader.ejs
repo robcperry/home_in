@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home IN</title>
+    <title>home In</title>
 
     <!---MATERIALIZE
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,6 +19,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
+      href="imgs/40px_home_in.png"
       />
       <!---ADDED Materialize--->
   <link
@@ -28,14 +29,30 @@
       />
     
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
   <body>
-    <header class="container">
-      <div class="row ">
-        <h1 class="col s6"><a href="/profile">home IN</a></h1>
-        <span class="col s6 ">Your your home invintory companion </span>
+    <nav class =''>
+      <div class="container nav-wrapper">
+        <a href="/login"><img src="imgs/type_home_in.png" class="brand-logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html" class ="#388e3c green-text text-darken-2">My Home</a></li>
+          <li><a href="sass.html" class ="#388e3c green-text text-darken-2">About</a></li>
+          <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+          
+
+        </ul>
       </div>
+    </nav>
+  
+    <ul class="sidenav sidenav-trigger" id="mobile-demo">
+      <li><a href="/login" class=" btn s12 m6 l3 z-depth-3 log #388e3c green darken-2 "> Login</a></li>
+      <li><a href="/signup" class="btn s12 m6 l3 z-depth-3 sign #388e3c green darken-2"> Signup</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
     </header>
   </body>
 </html>
