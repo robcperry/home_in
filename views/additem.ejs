@@ -1,0 +1,58 @@
+<%- include('partials/loggedheader') -%>
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-6">
+          <div class = "card-panel container">
+              <p><strong>User Name</strong>: <%= user.userName %></p>
+              <p><strong>Email</strong>: <%= user.email %></p>
+              
+          </div>
+          <div class="mt-5">
+            <h2>Add Item</h2>
+            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+              <div class="mb-3">
+                  <label for="itemName" class="form-label">Item Name</label>
+                  <input type="text" class="form-control" id="itemName" name="name">
+              </div>
+              <div class="mb-3">
+                <label for="room" class="form-label">Room</label>
+                <input type="text" class="form-control" id="room" name="room">
+            </div>
+            <div class="mb-3">
+              <label for="dateOfPurchase" class="form-label">Date of Purchase</label>
+              <input type="date"  class="form-control" id="dateOfPurchase" name="purDate">
+          </div>
+          <div class="mb-3">
+            <label for="retailer" class="form-label">Retailer</label>
+            <input type="text"  class="form-control" id="retailer" name="retailer">
+        </div>
+          <div class="mb-3">
+            <label for="modelNumber" class="form-label">Model Number</label>
+            <input type="text"  class="form-control" id="modelNumber" name="modelNum">
+        </div>
+        <div class="mb-3">
+          <label for="warranty" class="form-label">Warranty (Y/N)</label>
+          <input type="text"  class="form-control" id="warranty" name="warranty">
+      </div>
+          <div class="mb-3">
+            <label for="msrp" class="form-label">MSRP</label>
+            <input type="text" class="form-control" id="msrp" name="cost">
+        </div>
+            <!----<div class="mb-3">
+                <label for="caption" class="form-label">Caption</label>
+                <textarea class="form-control" id="caption" name="caption"></textarea>
+              </div>--->
+              <div class="mb-3">
+                <label for="imgUpload" class="form-label">Upload Media</label>
+                <input type="file" class="form-control" id="imageUpload" name="file">
+              </div><br>
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+              <a class="btn btn-primary" href="/feed">Return to Feed</a>
+            </form>
+          </div>
+      </div>
+      
+      </div>
+  </div>
+</div>
+<%- include('partials/footer') -%>

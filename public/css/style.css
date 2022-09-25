@@ -119,3 +119,24 @@ nav img{
 
 
 }
+
+/*My Home*/
+.roomlist{
+
+    margin-top: 5vh;
+    
+    
+
+}
+
+img{
+
+    height:40vh;
+    width: 20vw;
+
+}
+
+.roomlist .btn-floating{
+
+background-color: #3A7654;
+}

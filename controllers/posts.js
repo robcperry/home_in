@@ -11,6 +11,22 @@ module.exports = {
       console.log(err);
     }
   },
+  getHome: async (req, res) => {
+    try {
+      const posts = await Post.find({ user: req.user.id });
+      res.render("myhome.ejs", { posts: posts, user: req.user });
+    } catch (err) {
+      console.log(err);
+    }
+  },
+  getAdd: async (req, res) => {
+    try {
+      const posts = await Post.find({ user: req.user.id });
+      res.render("additem.ejs", { posts: posts, user: req.user });
+    } catch (err) {
+      console.log(err);
+    }
+  },
   getFeed: async (req, res) => {
     try {
       const posts = await Post.find().sort({ createdAt: "desc" }).lean();
@@ -36,7 +52,10 @@ module.exports = {
       await Post.create({
         itemName: req.body.name,
         room: req.body.room,
-        numberOfItems: req.body.itemNum,
+        dateOfPurchase: req.body.purDate,
+        retailer:req.body.retailer,
+        modelNumber: req.body.modelNum,
+        warranty:req.body.warranty,
         msrp: req.body.cost,
         media: result.secure_url,
         cloudinaryId: result.public_id,

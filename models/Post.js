@@ -9,10 +9,27 @@ const PostSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  numberOfItems: {
-    type: Number,
+  dateOfPurchase: {
+    type: String,
     required: true,
   },
+
+  retailer:{
+    type: String,
+    required: true,
+  },
+
+  modelNumber:{
+    type: String,
+    required:true,
+
+  },
+  warranty:{
+
+    type: String,
+    required: true,
+  },
+
   msrp: {
     type: String,
     required: true,
