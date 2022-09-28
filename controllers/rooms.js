@@ -1,4 +1,5 @@
 const Item = require('../models/Items')
+const Room = require('../models/Room')
 
 module.exports = {
   getAllRooms: async (req, res) => {
@@ -52,3 +53,4 @@ module.exports = {
       console.log(err)
     }
   },
+}

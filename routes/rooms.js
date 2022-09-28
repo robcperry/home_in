@@ -7,7 +7,7 @@ router.get('/', ensureAuth, roomsController.getAllRooms)
 router.get('/:id',ensureAuth, roomsController.getRoom)
 router.get('/createRoom',ensureAuth, roomsController.createRoom)
 router.delete('/deleteRoom',ensureAuth, roomsController.deleteRoom)
-router.post('/addIte,/:id', ensureAuth, roomsController.addItem)
+router.post('/addItem,/:id', ensureAuth, roomsController.addItem)
 router.delete('/deleteItem', ensureAuth, roomsController.deleteItem)
 
 modules.exports = router
