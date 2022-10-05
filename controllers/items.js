@@ -13,6 +13,14 @@ module.exports = {
       console.log(err);
     }
   },
+
+  addItem: async(req, res)=>{
+
+    /*res.render("additem.ejs")*/
+
+  }
+
+
   createItem: async (req, res) => {
     try {
       // Upload image to cloudinary

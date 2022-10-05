@@ -6,7 +6,8 @@ const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 //Post Routes - simplified for now
 
-router.get("/additem", ensureAuth, itemController.createItem)
+router.get("/additem", ensureAuth, itemController.addItem)
+
 router.get("/:id", ensureAuth, itemController.getItem);
 
 router.post("/createItem", upload.single("file"), itemController.createItem);
