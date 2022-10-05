@@ -6,7 +6,7 @@ module.exports = {
   
   getItem: async (req, res) => {
     try {
-      const item = await item.findById(req.params.id);
+      const item = await Item.findById(req.params.id);
       const comments = await Comment.find({post: req.params.id}).sort({ createdAt: "desc" }).lean();
       res.render("post.ejs", { post: post, user: req.user, comments: comments });
     } catch (err) {
@@ -16,11 +16,14 @@ module.exports = {
 
   addItem: async(req, res)=>{
 
-    /*res.render("additem.ejs")*/
-
-  }
-
-
+    try {
+      const item = await Item.findById(req.params.id);
+      res.render("additem.ejs", {user: req.user });
+    } catch (err) {
+      console.log(err);
+    }
+  },
+    
   createItem: async (req, res) => {
     try {
       // Upload image to cloudinary
@@ -45,7 +48,7 @@ module.exports = {
       console.log(err);
     }
   },
-   deletePost: async (req, res) => {
+   /*deletePost: async (req, res) => {
     try {
       // Find post by id
       let post = await Post.findById({ _id: req.params.id });
@@ -58,5 +61,5 @@ module.exports = {
     } catch (err) {
       res.redirect("/profile");
     }
-  },
+  },*/
 };
